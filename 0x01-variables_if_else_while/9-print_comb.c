@@ -8,14 +8,17 @@
 int main(void)
 {
 int i;
-for (i = 0; i < 10; i++)
+for(i = 0; i < 10; i++)
 {
-if (i < 9 )
+if(i < 9 )
 {
-putchar(i + ',' + ' ');
-} else
+putchar(i + '0');
+putchar(',');
+putchar(' ');
+}
+else
 {
-putchar(i + '$');
+putchar(i + '0');
 }
 }
 putchar('\n');
