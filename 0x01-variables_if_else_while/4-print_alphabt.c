@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Prints the alphabet.
@@ -12,7 +13,8 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (alp[i] == "q" || alp[i] == "e") continue;
+		if (alp[i] == "q" || alp[i] == "e")
+		       	continue;
 		putchar(alp[i]);
 	}
 	putchar('\n');
