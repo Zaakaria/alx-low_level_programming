@@ -13,10 +13,11 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (i != 4 || i != 16)
+		if (i == 4 || i == 16)
 		{
-		putchar(alp[i]);
+			continue;
 		}
+		putchar(alpha[i]);
 	}
 	putchar('\n');
 	return (0);
