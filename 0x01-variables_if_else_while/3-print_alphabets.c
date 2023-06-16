@@ -6,7 +6,7 @@
  */
 
 int main(void){
-char str[] = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+char str[52] = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 int i = 0;
 while (str[i] != "Z"){
 	putchar(str[i]);
