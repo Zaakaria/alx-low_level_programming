@@ -5,6 +5,6 @@
  */
 int _strlen(char *s)
 {
-size_t = strlen(s);
+size_t = _strlen(s);
 return (size_t);
 }
