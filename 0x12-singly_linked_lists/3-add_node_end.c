@@ -3,16 +3,16 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds new node in the end of linked list
- * @d: list_t list double pointer 
- * @str: string added in new node
+ * add_node_end - adds a new node at the end of a linked list
+ * @head: it is a double pointer to the list_t list
+ * @str: it is a string to be put in new node
  *
- * Return: new element address, or NULL if fails
+ * Return: new element address, will return NULL if it fails
  */
-list_t *add_node_end(list_t **d, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n;
-	list_t *t = *d;
+	list_t *t = *head;
 	unsigned int len = 0;
 
 	while (str[len])
@@ -26,9 +26,9 @@ list_t *add_node_end(list_t **d, const char *str)
 	n->len = len;
 	n->next = NULL;
 
-	if (*d == NULL)
+	if (*head == NULL)
 	{
-		*d = n;
+		*head = n;
 		return (n);
 	}
 

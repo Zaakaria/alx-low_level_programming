@@ -3,13 +3,13 @@
 #include "lists.h"
 
 /**
- * add_node - adds new node in the beginning of linked list
- * @d: list_t list double pointer 
- * @str: new string added in the node
+ * add_node - will add a new node at the beginning
+ * @head: it is a double pointer to list_t list
+ * @str: it is a new string to add in node
  *
- * Return: new element address, NULL if fails
+ * Return: the new element address , will return NULL if it fails
  */
-list_t *add_node(list_t **d, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *n;
 	unsigned int length = 0;
@@ -23,8 +23,8 @@ list_t *add_node(list_t **d, const char *str)
 
 	n->str = strdup(str);
 	n->len = length;
-	n->next = (*d);
-	(*d) = n;
+	n->next = (*head);
+	(*head) = n;
 
-	return (*d);
+	return (*head);
 }
