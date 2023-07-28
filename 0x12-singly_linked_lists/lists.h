@@ -8,7 +8,7 @@
  * @nxt: point to next node
  *
  */
-typedef struct list_singly
+typedef struct list_s
 {
 	unsigned int length;
 	char *str;
