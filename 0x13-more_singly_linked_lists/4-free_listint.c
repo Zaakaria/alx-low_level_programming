@@ -2,16 +2,16 @@
 
 /**
  * free_listint - it will make the linked list free
- * @head: the listint_t list to be set as free
+ * @head: it is the listint_t list thats gonna get freed
  */
 void free_listint(listint_t *head)
 {
-	listint_t *b;
+	listint_t *u;
 
 	while (head)
 	{
-		b = head->next;
+		u = head->next;
 		free(head);
-		head = b;
+		head = u;
 	}
 }
