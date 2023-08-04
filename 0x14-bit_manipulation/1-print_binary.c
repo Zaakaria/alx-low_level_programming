@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	for (e = 63; e >= 0; e--)
 	{
-		current = n >> i;
+		current = n >> e;
 
 		if (current & 1)
 		{
